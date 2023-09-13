@@ -1,0 +1,68 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y3VwY2FrZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: 105%;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+  
+    
+    align-items: center;
+}
+
+h1 {
+    color: #040505;
+    position: relative;
+    font-family: cursive;
+    font-size: xx-large;
+    font: bolder;
+}
+
+.btn {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #1565C0;
+}
+
+.cupcake-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color:  #4d4b4b;
+    font-family: cursive;
+    font-size: large;
+    font: bolder;
+}
+
+.cupcake-table th,
+.cupcake-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #787777;
+}
+
+.cupcake-table th {
+    background-color: #0a0909;
+    color: #e8f0f0;
+    font: bold;
+    font-family: cursive;
+    font-size: x-large;
+}
+
+.cupcake-table tr:hover {
+    background-color: #e6e5e5;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/base.css">
+    <title>Cupcake Store</title>
+</head>
+<body>
+    <h1>All Of Our Cupcakes</h1>   
+    <div>
+        <table class="cupcake-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Flavor</th>
+                    <th>Frosting</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cupcake in cupcakes %}
+                    <tr>
+                        <td>{{ cupcake["name"] }}</td>
+                        <td>{{ cupcake["flavor"] }}</td>
+                        <td>{{ cupcake["frosting"] }}</td>
+                        <td>{{ cupcake["price"] }}</td>
+                        <td>
+                            <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
+                                <button type="button" class="btn">Add to Cart</button>
+                            </a>
+                        </td>   
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/">
+            <button type="button" class="btn">Back Home</button>
+        </a> 
+        <a href="order">
+            <button type="button" class="btn">Go To Cart</button>
+        </a>     
+    </div>
+</body>
+</html>
